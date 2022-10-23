@@ -1,0 +1,46 @@
+{ 
+  "description": "This NFT proves I've created and deployed my first ERC721 smart contract on Goerli with Alchemy Road to Web3 week 1",
+  "external_url": "Alchemy.com/?a=Road2web3.0",
+  "image": "https://ipfs.filebase.io/ipfs/Qmf5R5fFXugVDXhjyKBRuwfCAjbTxSswQP4TnJiLdx6TaM",
+  "name": "Pepe Tilak", 
+  "attributes": [
+    {
+      "trait_type": "Base", 
+      "value": "Pepe"
+    }, 
+    {
+      "trait_type": "Eyes", 
+      "value": "Big"
+    }, 
+    {
+      "trait_type": "Mouth", 
+      "value": "Pokerface"
+    }, 
+    {
+      "trait_type": "Level", 
+      "value": 69
+    }, 
+    {
+      "trait_type": "Stamina", 
+      "value": 420
+    }, 
+    {
+      "trait_type": "Personality", 
+      "value": "Sigma"
+    }, 
+    {
+      "display_type": "boost_number", 
+      "trait_type": "DankNess", 
+      "value": 40
+    }, 
+    {
+      "display_type": "boost_percentage", 
+      "trait_type": "Stamina Increase", 
+      "value": 10
+    }, 
+    {
+      "display_type": "number", 
+      "trait_type": "Generation", 
+      "value": 2
+    }]
+  }
