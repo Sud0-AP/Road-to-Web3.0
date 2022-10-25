@@ -1,13 +1,9 @@
-# Sample Hardhat Project
+# Week 3 
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+On chain metadata nfts on polygon testnet :
 
-Try running some of the following tasks:
+OpenSea:
+https://testnets.opensea.io/assets/mumbai/0x23584547c619a01ff86c38b5dbafb3f0b17b36f8/1
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+PolygonScan:
+https://mumbai.polygonscan.com/address/0x23584547c619a01ff86c38b5dbafb3f0b17b36f8
