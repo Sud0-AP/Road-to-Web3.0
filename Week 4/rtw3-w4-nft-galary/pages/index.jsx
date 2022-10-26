@@ -11,13 +11,14 @@ const Home = () => {
   const [fetchForCollection, setFetchForCollection] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
   const [pageKeys, setPageKeys] = useState([""]);
+  const API_KEY = process.env.API_KEY;
   
   
   async function fetchNFTs()  {
     let NFTs;
     console.log("Fetching NFTs...");
 
-    const apiKey = "your api key";
+    const apiKey = API_KEY;
     const baseURL = `https://eth-mainnet.alchemyapi.io/nft/v2/${apiKey}/getNFTs/`;
 
     if (!collection.length) {
