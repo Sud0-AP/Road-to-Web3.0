@@ -11,14 +11,14 @@ const Home = () => {
   const [fetchForCollection, setFetchForCollection] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
   const [pageKeys, setPageKeys] = useState([""]);
-  const API_KEY = process.env.API_KEY;
+ // const API_KEY = process.env.API_KEY;
   
   
   async function fetchNFTs()  {
     let NFTs;
     console.log("Fetching NFTs...");
 
-    const apiKey = API_KEY;
+    const apiKey = "9yrXUAdpm7ZI9VlPFJWm2gA8YPAWSPBt";
     const baseURL = `https://eth-mainnet.alchemyapi.io/nft/v2/${apiKey}/getNFTs/`;
 
     if (!collection.length) {
@@ -47,7 +47,7 @@ const Home = () => {
       var requestOptions = {
         method: 'GET'
       };
-    const apiKey = "-XXKpDXd7gGdhs7L5fRakYuRL3BDZcW0";
+    const apiKey = "9yrXUAdpm7ZI9VlPFJWm2gA8YPAWSPBt";
     
     const baseURL = `https://eth-mainnet.alchemyapi.io/nft/v2/${apiKey}/getNFTsForCollection/`;
     const fetchURL = `${baseURL}?contractAddress=${collection}&withMetadata=${"true"}&startToken=${startToken}`;
@@ -91,7 +91,7 @@ const Home = () => {
         <input className="w-2/5 bg-slate-100 py-2 px-2 rounded-lg text-grey-800 focus:outline-purple-300 disabled:bg-slate-50 disabled:text-grey-50" onChange={(e)=>{setCollectionAddress(e.target.value)}} value={collection} type={"text"} placeholder="Add Collection Address!"></input>
       
       
-        <button class={"shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white hover:font-bold py-2 px-4 rounded"} onClick={
+        <button className={"shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white hover:font-bold py-2 px-4 rounded"} onClick={
           ()=>{
             if (fetchForCollection) {
               fetchNFTsForCollection();
